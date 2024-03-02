@@ -1,0 +1,18 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    --opacity: .7;
+
+    --animation-speed: .3s;
+    --animation-func: ease;
+    --animation: var(--animation-speed) var(--animation-func);
+}
+
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
