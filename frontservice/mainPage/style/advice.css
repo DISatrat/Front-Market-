@@ -17,14 +17,37 @@
     object-fit: cover;
 }
 
-.advice-card-title{
+.advice-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.advice-card-title {
     font-size: 30px;
     font-family: Inter, sans-serif;
 }
 
-.advice-card-subtitle{
+.advice-card-subtitle {
     font-size: 25px;
     font-family: Inter, sans-serif;
+}
+
+.advice-card-title,
+.advice-card-subtitle {
+    color: var(--color-black);
+    text-decoration: none;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size var(--animation-speed);
+}
+
+.advice-card-title:hover,
+.advice-card-subtitle:hover {
+    background-size: 100% 2px;
 }
 
 .advice-card-first {
@@ -53,4 +76,5 @@
 .advice-card-second:hover,
 .advice-card-third:hover {
     opacity: var(--opacity);
+    cursor: pointer;
 }
